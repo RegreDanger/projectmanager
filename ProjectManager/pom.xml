@@ -69,7 +69,7 @@
           </execution>
         </executions>
         <configuration>
-          <mainClass>com.regre.ProjectManagerApp</mainClass> <!-- Asegúrate de cambiar esto por tu clase principal -->
+          <mainClass>ProjectManagerApp</mainClass> <!-- Asegúrate de cambiar esto por tu clase principal -->
         </configuration>
       </plugin>
     </plugins>
