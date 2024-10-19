@@ -43,40 +43,54 @@
       <version>21.0.5</version>
     </dependency>
   </dependencies>
-  
-  <build>
+
+<build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
-        <configuration>
-          <source>21</source>
-          <target>21</target>
-        </configuration>
-      </plugin>
-      
-      <!-- Plugin para JavaFX -->
-      <plugin>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-maven-plugin</artifactId>
-        <version>0.0.8</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <mainClass>ProjectManagerApp</mainClass> <!-- Asegúrate de cambiar esto por tu clase principal -->
-        </configuration>
-      </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>  <!-- Asegúrate de usar una versión compatible -->
+            <configuration>
+                <source>21</source>
+                <target>21</target>
+            </configuration>
+        </plugin>
+		<plugin>
+			<groupId>org.openjfx</groupId>
+        	<artifactId>javafx-maven-plugin</artifactId>
+        	<version>0.0.4</version>
+        	<configuration>
+        		<mainClass>com.regre.ProjectManagerApp</mainClass>
+        	</configuration>
+		</plugin>
+        <!-- Plugin de shade ya está bien -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-shade-plugin</artifactId>
+            <version>3.2.4</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>shade</goal>
+                    </goals>
+                    <configuration>
+                        <shadedArtifactAttached>true</shadedArtifactAttached>
+                        <transformers>
+                            <transformer
+                                implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <mainClass>com.regre.ProjectManagerApp</mainClass>
+                            </transformer>
+                        </transformers>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
     </plugins>
-  </build>
+</build>
+
 
   <properties>
-    <!-- Codificación explícita -->
+		<!-- Codificación explícita -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
