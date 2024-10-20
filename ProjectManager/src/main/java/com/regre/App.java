@@ -5,7 +5,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class ProjectManagerApp extends Application {
+public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
     	Parent root = FXMLLoader.load(getClass().getResource("/ui/panels_component/MainController/MainController.fxml"));
