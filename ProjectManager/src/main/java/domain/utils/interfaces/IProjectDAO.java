@@ -7,7 +7,7 @@ import domain.Project;
 
 public interface IProjectDAO {
     void createProject(Project project) throws SQLException;
-    List<Project> readProjects() throws SQLException;
+    List<Project> readProjects(int userID) throws SQLException;
     void updateProject(Project project) throws SQLException;
     void deleteProject(int projectId) throws SQLException;
 }
