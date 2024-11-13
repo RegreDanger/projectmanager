@@ -10,7 +10,7 @@ public class User {
     private String fullName;
     private Date dateCreated;
 
-    public User(int userID, String username, String password, String email, String fullName, Date dateCreated) {
+    public User(int userID, String username, String fullName, String email, String password, Date dateCreated) {
         this.userID = userID;
         this.username = username;
         this.password = password;
@@ -19,53 +19,43 @@ public class User {
         this.dateCreated = dateCreated;
     }
 
-    // Getters y Setters
-    public int getUserID() {
-        return userID;
-    }
+	public int getUserID() {
+		return userID;
+	}
 
-    public void setUserID(int userID) {
-        this.userID = userID;
-    }
+	public String getUsername() {
+		return username;
+	}
 
-    public String getUsername() {
-        return username;
-    }
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getFullName() {
+		return fullName;
+	}
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
 
-    public String getPassword() {
-        return password;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public void setPassword(String password) {
-        this.password = password; // Recuerda encriptar esta contraseña
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public Date getDateCreated() {
-        return dateCreated;
-    }
-
-    public void setDateCreated(Date dateCreated) {
-        this.dateCreated = dateCreated;
-    }
+	public Date getDateCreated() {
+		return dateCreated;
+	}
 }
 

@@ -1,4 +1,4 @@
-package domain;
+package domain.DAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

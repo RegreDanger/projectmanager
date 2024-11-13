@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Test;
 
 import com.github.javafaker.Faker;
 
+import domain.DAO.ProjectDAO;
+import domain.DAO.TaskDAO;
+
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;

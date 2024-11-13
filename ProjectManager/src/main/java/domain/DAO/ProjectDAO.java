@@ -1,8 +1,10 @@
-package domain;
+package domain.DAO;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import domain.Project;
 import domain.utils.interfaces.IProjectDAO;
 
 public class ProjectDAO implements IProjectDAO {
