@@ -1,0 +1,27 @@
+.title-style {
+	-fx-translate-x: 25px;
+    -fx-font-family: 'Open Sans';
+    -fx-font-size: 24px;
+}
+
+.email-label-style {
+	-fx-font-family: 'Open Sans';
+	-fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.password-label-style {
+	-fx-font-family: 'Open Sans';
+	-fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.field-focus-style {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.hyperlink-focus-style {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}

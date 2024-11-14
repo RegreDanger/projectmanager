@@ -124,7 +124,7 @@
                   <Insets left="110.0" />
                </VBox.margin>
             </Button>
-            <Hyperlink style="-fx-background-color: transparent; -fx-text-fill: #303750;" styleClass="hyperlink-focus-style" text="¿Ya tienes una cuenta? Inicia Sesión" textFill="#303750">
+            <Hyperlink fx:id="registerLink" onAction="#registerLinkOnAction" style="-fx-background-color: transparent; -fx-text-fill: #303750;" styleClass="hyperlink-focus-style" text="¿Ya tienes una cuenta? Inicia Sesión" textFill="#303750">
                <VBox.margin>
                   <Insets left="40.0" />
                </VBox.margin>

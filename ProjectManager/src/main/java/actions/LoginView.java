@@ -10,8 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-public class RegisterView {
-
+public class LoginView {
 
     @FXML
     private TextField emailField;
@@ -20,7 +19,10 @@ public class RegisterView {
     private Label emailLabel;
 
     @FXML
-    private TextField fullnameField;
+    private Button loginButton;
+
+    @FXML
+    private Hyperlink loginLink;
 
     @FXML
     private PasswordField passwordField;
@@ -32,27 +34,14 @@ public class RegisterView {
     private TextField passwordTextField;
 
     @FXML
-    private Button registerButton;
-
-    @FXML
-    private Hyperlink registerLink;
-    
-    @FXML
-    private TextField usernameField;
-
-    @FXML
-    private Label usernameLabel;
-
-    @FXML
     private Button visibilityButton;
-    
+
     private ImageView eyeSlashImage = new ImageView(new Image(getClass().getResourceAsStream("/images/eye-slash.png")));
     private ImageView eyeImage = new ImageView(new Image(getClass().getResourceAsStream("/images/eye.png")));
     private boolean isPasswordVisible = false;
 
     @FXML
     public void initialize() {
-    	//TODO Terminar el proceso de registro 
     	eyeSlashImage.setFitWidth(26);
     	eyeSlashImage.setFitHeight(26);
     	visibilityButton.setGraphic(eyeSlashImage);
@@ -64,7 +53,12 @@ public class RegisterView {
     }
 
     @FXML
-    void fullnameFieldOnAction(ActionEvent event) {
+    void loginButtonOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void loginLinkOnAction(ActionEvent event) {
 
     }
 
@@ -75,21 +69,6 @@ public class RegisterView {
 
     @FXML
     void passwordTextFieldOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void registerButtonOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void registerLinkOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void usernameFieldOnAction(ActionEvent event) {
 
     }
 
